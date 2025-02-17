@@ -1,0 +1,66 @@
+<!--Exercise 9: Styling Text with CSS
+
+Description: 
+
+Using an internal CSS style in the <head> of your document, 
+change the color of all <h1> elements to blue and set the font family to Arial.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <style>
+        /* Internal CSS to style <h1> */
+        h1 {
+            color: blue;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <h2>About Me</h2>
+        <p>Hi! I'm a web development enthusiast. I enjoy learning new technologies and building creative projects. I aim to become proficient in HTML, CSS, JavaScript, and beyond!</p>
+        
+        <!-- Section for Hobbies -->
+        <section>
+            <h3>My Favorite Hobbies</h3>
+            <ul>
+                <li>Reading books</li>
+                <li>Playing video games</li>
+                <li>Travelling to new places</li>
+            </ul>
+        </section>
+    </main>
+    
+    <!-- Contact Form Section -->
+    <section>
+        <h3>Contact Me</h3>
+        <form action="#" method="POST">
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" /><br><br>
+            
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" /><br><br>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <!-- Link to About Page -->
+    <section>
+        <a href="about.html">Learn more about me</a>
+    </section>
+</body>
+</html>

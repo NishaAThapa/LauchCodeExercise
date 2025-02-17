@@ -1,0 +1,29 @@
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Default link styling */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Styling visited links */
+a:visited {
+    color: purple;
+}

@@ -1,0 +1,82 @@
+<!--Exercise 15: CSS Combinators
+
+Description: 
+
+Replace the `<a href="about.html">Learn more about me</a>` html in your file
+with a <nav> element. 
+
+Inside of this <nav> element, create an unordered list of 3 separate list 
+items. 
+
+Inside of each list item, put an <a> tag that links out to the following html
+pages:
+- index.html 
+- about.html
+- contact.html
+
+Then make the index.html link display as "Home", the about.html link as "About,
+and the contact.html link as "Contact Me"
+
+Then, use a descendant selector to style all <li> elements inside the 
+<nav> element by setting their display to inline and adding some padding.-->
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 id="main-title">Welcome to My Page</h1>
+    </header>
+    
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section wrapped in a <div> -->
+    <div class="main-container">
+        <main>
+            <h2>About Me</h2>
+            <p>Hi! I'm a web development enthusiast. I enjoy learning new technologies and building creative projects. I aim to become proficient in HTML, CSS, JavaScript, and beyond!</p>
+            
+            <!-- Section for Hobbies with 'highlight' class on list items -->
+            <section>
+                <h3>My Favorite Hobbies</h3>
+                <ul>
+                    <li class="highlight">Reading books</li>
+                    <li class="highlight">Playing video games</li>
+                    <li class="highlight">Travelling to new places</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Contact Form Section -->
+    <section>
+        <h3>Contact Me</h3>
+        <form action="#" method="POST">
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" /><br><br>
+            
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" /><br><br>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
